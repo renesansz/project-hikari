@@ -32,10 +32,10 @@ class ViewController: UIViewController {
   func updateUI() {
     if isLightOn {
       view.backgroundColor = .white
-      lightButton.setTitle("OFF", for: .normal)
+      lightButton.setTitle("ON", for: .normal)
     } else {
       view.backgroundColor = .black
-      lightButton.setTitle("ON", for: .normal)
+      lightButton.setTitle("OFF", for: .normal)
     }
   }
 
