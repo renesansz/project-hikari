@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
   
-  @IBOutlet weak var lightButton: UIButton!
   var isLightOn = true
 
   override func viewDidLoad() {
@@ -30,13 +29,7 @@ class ViewController: UIViewController {
   }
   
   func updateUI() {
-    if isLightOn {
-      view.backgroundColor = .white
-      lightButton.setTitle("ON", for: .normal)
-    } else {
-      view.backgroundColor = .black
-      lightButton.setTitle("OFF", for: .normal)
-    }
+    view.backgroundColor = isLightOn ? .white : .black
   }
 
 }
